@@ -1,0 +1,6 @@
+#for InteliJ IDEA 
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
