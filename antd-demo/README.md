@@ -58,7 +58,8 @@ const theme = {
     "primary-color": "#ff5722"
     };
 
-{loader: 'less-loader', 
+{
+    loader: 'less-loader', 
     options: {
         javascriptEnabled: true, 
         modifyVars: theme
