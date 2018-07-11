@@ -13,6 +13,10 @@ const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 const paths = require('./paths');
 const getClientEnvironment = require('./env');
 
+// antd theme
+const theme = {"primary-color": "#ff5722"};
+
+
 // Webpack uses `publicPath` to determine where the app is being served from.
 // It requires a trailing slash, or the file assets will get an incorrect path.
 const publicPath = paths.servedPath;
@@ -208,7 +212,7 @@ module.exports = {
                     },
                     {
                       loader: require.resolve('less-loader'),
-                      options: {javascriptEnabled: true}
+                      options: {javascriptEnabled: true,modifyVars: theme}
                   }
                   ],
                 },

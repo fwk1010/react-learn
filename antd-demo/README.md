@@ -49,3 +49,19 @@ yarn start
     options: {javascriptEnabled: true}
 }
 ```
+
+## custom theme / 自定义主题
+修改webpack.config.dev.js和webpack.config.prod.js
+```js
+// cover antd theme by less-loader
+const theme = {
+    "primary-color": "#ff5722"
+    };
+
+{loader: 'less-loader', 
+    options: {
+        javascriptEnabled: true, 
+        modifyVars: theme
+    }
+}
+```
